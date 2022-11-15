@@ -1,3 +1,3 @@
 # jakdab <- github nickname
 
-- [deploy]()
+- [deploy](https://webapp-daftacademy-jakdab.vercel.app/)
