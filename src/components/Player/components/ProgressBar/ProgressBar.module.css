@@ -1,0 +1,7 @@
+.progress {
+    @apply w-full h-2 bg-ui4 rounded-sm my-2;
+}
+
+.activeProgress {
+    @apply w-0 h-full bg-white rounded-sm;
+}

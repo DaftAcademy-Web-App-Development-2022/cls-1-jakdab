@@ -1,29 +1,30 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
+import Head from "next/head";
 
-import { NextPageWithLayout } from '~/types/common.types'
+import { NextPageWithLayout } from "~/types/common.types";
 
-import { Fragment } from 'react'
+import { Layout } from "~/components";
+import Main from "../views/Main/Main.view";
+import playlistData from "~/data/playlistsData.json";
+import { PlaylistModelWithId } from "~/models/playlist.model";
 
 
 const Home: NextPageWithLayout = () => {
   return (
-    <Fragment>
+    <>
       <Head>
         <title>DaftAcademy – WebApp 2022</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <div>
-        <h1>DaftAcademy – WebApp 2022</h1>
+        <Main items={playlistData as Array<PlaylistModelWithId>} />
       </div>
-
-    </Fragment>
-  )
-}
-
-Home.getLayout = (page) => {
-  return <div>{page}</div>;
+    </>
+  );
 };
 
-export default Home
+Home.getLayout = (page) => {
+  return <Layout>{page}</Layout>;
+};
+
+export default Home;

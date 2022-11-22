@@ -1,0 +1,7 @@
+.root {
+    @apply p-4 lg:border-t lg:border-ui4;
+}  
+
+.container {
+    @apply flex w-full items-center;
+}

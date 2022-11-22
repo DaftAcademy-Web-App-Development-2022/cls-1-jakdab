@@ -1,0 +1,11 @@
+.root {
+    @apply p-4
+}
+
+.background {
+    @apply flex justify-center items-center align-middle w-12 h-12 bg-ui5 p-4 rounded-full;
+}
+
+.icon {
+    @apply h-5 w-5 text-white;
+}

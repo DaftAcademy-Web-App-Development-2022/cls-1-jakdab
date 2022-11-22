@@ -1,0 +1,27 @@
+.root {
+    @apply p-4
+}
+
+.background {
+    @apply flex justify-center items-center align-middle w-10 h-10 bg-ui5 p-4 rounded-full;
+}
+
+.icon {
+    @apply h-5 w-5 text-white;
+}
+
+.volContainer {
+    @apply absolute bottom-24 right-8 p-4 lg:border lg:border-ui4 bg-ui7 rounded-md;
+}
+
+.volWidth {
+    @apply w-32;
+}
+
+.volTrack {
+    @apply w-full h-2 p-2 mx-2 bg-ui3 rounded-full;
+}
+
+.volThumb {
+    @apply w-5 h-5 transform translate-x-10 bg-white rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ui2;
+}
